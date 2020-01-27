@@ -1,8 +1,8 @@
-# Contributing to Atom
+# Contributing to EasyFTC
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-The following is a set of guidelines for contributing to Atom and its packages, which are hosted in the [Atom Organization](https://github.com/atom) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to EasyFTC, which is hosted in the [Hax Robotics Organization](https://github.com/lcrobotics) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 #### Table Of Contents
 
@@ -11,7 +11,6 @@ The following is a set of guidelines for contributing to Atom and its packages, 
 [I don't want to read this whole thing, I just have a question!!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
 
 [What should I know before I get started?](#what-should-i-know-before-i-get-started)
-  * [Atom and Packages](#atom-and-packages)
   * [Atom Design Decisions](#design-decisions)
 
 [How Can I Contribute?](#how-can-i-contribute)
@@ -23,7 +22,6 @@ The following is a set of guidelines for contributing to Atom and its packages, 
 [Styleguides](#styleguides)
   * [Git Commit Messages](#git-commit-messages)
   * [JavaScript Styleguide](#javascript-styleguide)
-  * [CoffeeScript Styleguide](#coffeescript-styleguide)
   * [Specs Styleguide](#specs-styleguide)
   * [Documentation Styleguide](#documentation-styleguide)
 
@@ -32,11 +30,11 @@ The following is a set of guidelines for contributing to Atom and its packages, 
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [Atom Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [atom@github.com](mailto:atom@github.com).
+This project and everyone participating in it is governed by the [EasyFTC Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [teamhax55@gmail.com](mailto:teamhax55@gmail.com).
 
 ## I don't want to read this whole thing I just have a question!!!
 
-> **Note:** [Please don't file an issue to ask a question.](https://blog.atom.io/2016/04/19/managing-the-deluge-of-atom-issues.html) You'll get faster results by using the resources below.
+> **Note:** [Please don't file an issue to ask a question. You'll get faster results by using the resources below.
 
 We have an official message board with a detailed FAQ and where the community chimes in with helpful advice if you have questions.
 
