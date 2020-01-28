@@ -36,23 +36,18 @@ This project and everyone participating in it is governed by the [EasyFTC Code o
 
 > **Note:** [Please don't file an issue to ask a question. You'll get faster results by using the resources below.
 
-We have an official message board with a detailed FAQ and where the community chimes in with helpful advice if you have questions.
 
 
+Join the EasyFTC Discord team:
 
-If chat is more your speed, you can join the Atom and Electron Slack team:
+* [Join the Discord](https://discord.gg/WxQAaHA)
+* Even though Discord is a chat service, sometimes it takes several hours for community members to respond &mdash; please be patient!
+* Use the `#general` channel for general questions or discussion about EasyFTC
+* There are many other channels available, check the channel list
 
-[//]: # * [Join the Atom and Electron Slack Team](https://atom-slack.herokuapp.com/)
-    [//]: #* Even though Slack is a chat service, sometimes it takes several hours for community members to respond &mdash; please be patient!
-    [//]: #* Use the `#atom` channel for general questions or discussion about Atom
-    [//]: #* Use the `#electron` channel for questions about Electron
-    [//]: #* Use the `#packages` channel for questions or discussion about writing or contributing to Atom packages (both core and community)
-    [//]: #* Use the `#ui` channel for questions and discussion about Atom UI and themes
-    [//]: #* There are many other channels available, check the channel list
+### What should I know before I get started?
 
-[//]: ### What should I know before I get started?
-
-[//]: #### EasyFTC
+#### EasyFTC
 
 [//]: #Atom is a large open source project &mdash; it's made up of over [200 repositories](https://github.com/atom). When you initially consider contributing to Atom, you might be unsure about which of those 200 repositories implements the functionality you want to change or report a bug for. This section should help you with that.
 
