@@ -48,7 +48,7 @@ Join the EasyFTC Discord team:
 
 #### EasyFTC
 
-EasyFTC is an open source project &mdash; it is made up of multiple repositories. When you initially consider contributing to EasyFTC, you might be unsure about which repositories implements the functionality you want to change or report a bug for. This section should help you with that.
+EasyFTC is an open source project &mdash; it is made up of multiple repositories. When you initially consider contributing to EasyFTC, you might be unsure about which repository implements the functionality you want to change or report a bug for. This section should help you with that.
 
 EasyFTC is intentionally very modular. Nearly every  element you interact with comes from a package, even fundamental things like movement and autonomous generation.
 
@@ -62,7 +62,7 @@ EasyFTC is intentionally very modular. Nearly every  element you interact with c
 
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for EasyFTC. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
+This section guides you through submitting a bug report for EasyFTC. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer:, and find related reports :mag_right:.
 
 Before creating bug reports, please check [this list](#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please [include as many details as possible](#how-do-i-submit-a-good-bug-report). Fill out [the required template](https://github.com/lcrobotics/EasyFTC/blob/master/.github/ISSUE_TEMPLATE/bug_report.md), the information it asks for helps us resolve issues faster.
 
@@ -72,13 +72,11 @@ Before creating bug reports, please check [this list](#before-submitting-a-bug-r
 
 #### How Do I Submit A (Good) Bug Report?
 
-Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). To create an issue create an issue on that repository and provide the following information by filling in [the template](https://github.com/lcrobotics/EasyFTC/blob/master/.github/ISSUE_TEMPLATE/bug_report.md).
-
-Explain the problem and include additional details to help maintainers reproduce the problem:
+Bugs are tracked as [GitHub issues](https://guides.github.com/features/issues/). In order to create an issue, make one on that repository and provide the following information by filling in [the template](https://github.com/lcrobotics/EasyFTC/blob/master/.github/ISSUE_TEMPLATE/bug_report.md):
 
 * **Use a clear and descriptive title** for the issue to identify the problem.
 * **Describe the exact steps which reproduce the problem** in as many details as possible. When listing steps, **don't just say what you did, but explain how you did it**. 
-* **Provide specific examples to demonstrate the steps**. Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples. If you're providing snippets in the issue, use [Markdown code blocks](https://help.github.com/articles/markdown-basics/#multiple-lines).
+* **Provide specific examples to demonstrate the steps**. Include links to files or GitHub projects, or copy/pasteable snippets, in which you use in those examples. If you're providing snippets in the issue, use [Markdown code blocks](https://help.github.com/articles/markdown-basics/#multiple-lines).
 * **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
 * **Explain which behavior you expected to see instead and why.**
 * **If you're reporting that EasyFTC crashed**, include a crash report in the issue in a [code block](https://help.github.com/articles/markdown-basics/#multiple-lines), a [file attachment](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/), or put it in a [gist](https://gist.github.com/) and provide link to that gist.
@@ -186,3 +184,4 @@ All Documentation should adhere to [Google's Documentation Style Guide](https://
 
 
 ##### CONTRIBUTING.md is taken and modified from https://github.com/atom/atom
+
