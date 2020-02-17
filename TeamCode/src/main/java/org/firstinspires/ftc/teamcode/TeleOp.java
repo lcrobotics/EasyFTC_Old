@@ -20,7 +20,7 @@ class TeleOp {
         for (int i = 0; i < 2; i++){
             controller_vals[i] = controller_vals[i] * speed_modifiers[i];
         }
-        drive(controller_vals);
+        drive_array(controller_vals);
     }
 }
 

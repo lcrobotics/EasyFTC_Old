@@ -1,6 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
-import static org.firstinspires.ftc.teamcode.SuperOp.drive;
+import static org.firstinspires.ftc.teamcode.SuperOp.*;
 
 class Autonomous {
     // speed modifiers - refer to TeleOp to see how they work
@@ -18,7 +18,7 @@ class Autonomous {
         for (int i = 0; i < 2; i++){
             speed_vals[i] = speed_vals[i] * speed_modifiers[i];
         }
-        drive(speed_vals);
+        drive_array(speed_vals);
     }
 
     /**

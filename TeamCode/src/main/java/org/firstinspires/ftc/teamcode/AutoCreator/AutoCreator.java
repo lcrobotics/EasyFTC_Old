@@ -11,24 +11,58 @@ public class AutoCreator extends SuperOp {
     Queue<HashMap<String, Float>> allFrames = new LinkedList<>();
     HashMap<String, Float> prev;
     HashMap<String, Float> curr;
+    HashMap<String, Float> newFrame;
+    boolean running = false;
+    // tracks the time between the last frame and this frame
+    float timeElapsed = 0;
+    // tracks the time on the timer of the last frame
+    float lastTime = 0;
 
     @Override
     public void loop() {
-        // update the frames to shift it forward
-        prev = curr;
-        HashMap<String, Float> curr = createFrame();
+        if (gamepad1.a) {
+            running = true;
+        }
+
+        if (gamepad1.b) {
+            running = false;
+        }
+
+        if (running) {
+            // updates the time
+            // since we only want the time between the button presses, and not since the opMode starts running,
+            // we need an independent variable that changes
+            timeElapsed += (time - lastTime);
+            // update the frames to shift it forward
+            prev = curr;
+            // copy down all of the gamepad values into a new hashmap
+            curr = copyCommands();
+            // compare the previous frame and the current frame
+            // and put all of the changes into a new hashmap
+            newFrame = compareFrames(prev, curr);
+            // add that hashmap into the queue
+            allFrames.add(newFrame);
+
+            // set the lastTime variable to the current time
+            lastTime = (float) time;
+        }
     }
 
+    // detects the changes
     HashMap<String, Float> compareFrames(HashMap<String, Float> prev, HashMap<String, Float> curr) {
-        for (String i : curr.keySet()) {
-            if (curr.get(i).equals(prev.get(i))) {
-
+        HashMap<String, Float> changedFrame = new HashMap<String, Float>();
+        for (String key : curr.keySet()) {
+            if (!curr.get(key).equals(prev.get(key))) {
+                changedFrame.put(key, curr.get(key));
             }
         }
-        return
+        return changedFrame;
     }
 
-    HashMap<String, Float> createFrame() {
+    // copies all the commands that are given by the controller this frame
+    // and put them into a hashmap
+    // then return that hashmap
+    HashMap<String, Float> copyCommands() {
         HashMap<String, Float> allCommands = new HashMap<String, Float>();
 
         // put all of the values into the hashmap
@@ -58,21 +92,10 @@ public class AutoCreator extends SuperOp {
         allCommands.put("right_bumper", (gamepad1.right_bumper) ? 1.0f : 0.0f);
         allCommands.put("left_stick_button", (gamepad1.left_stick_button) ? 1.0f : 0.0f);
         allCommands.put("right_stick_button", (gamepad1.right_stick_button) ? 1.0f: 0.0f);
+        // track the time
+        allCommands.put("time", timeElapsed);
 
         return allCommands;
     }
-
-    /**
-     * write object that tracks the changes in every gamepad value and stores them in the queue
-     * every runtime loop the object will take all the gamepad values
-     * and stores them into a queue
-     *
-     * should be dome with a hashmap or linkedlist or array or objects
-     * that stores name of the controller button and the value
-     *
-     *
-     */
-
-
 }
 

@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 // bunch of import stuff
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.Servo;
 
 import static org.firstinspires.ftc.teamcode.MotorDecs.*;
 import static org.firstinspires.ftc.teamcode.TeleOp.*;
@@ -40,6 +41,13 @@ public abstract class SuperOp extends OpMode {
         BackLeftDrive = hardwareMap.get(DcMotor.class, "BackLeftDrive");
         BackRightDrive = hardwareMap.get(DcMotor.class, "BackRightDrive");
 
+        DualMotor1 = hardwareMap.get(DcMotor.class, "DualMotor1");
+        DualMotor2 = hardwareMap.get(DcMotor.class, "DualMotor2");
+
+        SingleMotor = hardwareMap.get(DcMotor.class, "SingleMotor");
+
+        Servo1 = hardwareMap.get(Servo.class, "Servo1");
+
         // set up the motors
         motorSetup();
     }
@@ -65,11 +73,31 @@ public abstract class SuperOp extends OpMode {
     // all the values passed into here will be modified already, so
     // this method only has to set the motor power according to the speeds
     // this is the only method that sets the power to the wheels
-    public static void drive(double[] motor_speeds) {
+    public static void drive_array(double[] motor_speeds) {
         FrontLeftDrive.setPower(motor_speeds[1] - motor_speeds[0] + motor_speeds[2]);
         FrontRightDrive.setPower(motor_speeds[1] + motor_speeds[0] - motor_speeds[2]);
         BackLeftDrive.setPower(motor_speeds[1] + motor_speeds[0] + motor_speeds[2]);
         BackRightDrive.setPower(motor_speeds[1] - motor_speeds[0] - motor_speeds[2]);
+    }
+
+    public static void drive(double x, double y, double w) {
+        FrontLeftDrive.setPower(y - x + w);
+        FrontRightDrive.setPower(y + x - w);
+        BackLeftDrive.setPower(y + x + w);
+        BackRightDrive.setPower(y - x - w);
+    }
+
+    public static void dualMotor(double val1, double val2) {
+        DualMotor1.setPower(val1);
+        DualMotor2.setPower(val2);
+    }
+
+    public static void singleMotor(double val1) {
+        SingleMotor.setPower(val1);
+    }
+
+    public static void servo(double position) {
+        Servo1.setPosition(position);
     }
 }
 
