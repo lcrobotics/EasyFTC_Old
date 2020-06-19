@@ -1,2 +1,3 @@
+include ':EasyFTCLib'
 include ':FtcRobotController'
 include ':TeamCode'
