@@ -1,4 +1,7 @@
 package com.lcrobotics.easyftclib;
 
-public class CustomOpMode  {
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+
+public abstract class CustomOpMode extends LinearOpMode {
+
 }
